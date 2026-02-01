@@ -1880,3 +1880,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Hide inactive articles to make navbar switching work */
+.main-content article:not(.active) {
+  display: none;
+}
+
+.main-content article.active {
+  display: block;
+}
