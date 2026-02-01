@@ -122,9 +122,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     for (let j = 0; j < pages.length; j++) {
       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
-        pages[j].scrollIntoView({ behavior: 'smooth' });
+        pages[j].classList.add("active");
         navigationLinks[j].classList.add("active");
       } else {
+        pages[j].classList.remove("active");
         navigationLinks[j].classList.remove("active");
       }
     }
