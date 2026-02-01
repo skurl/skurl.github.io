@@ -2,9 +2,9 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Maciej Robert Szczesny
+Maciej Robert Szczesny
+Biotechnology Student @ UOE
 
 Show Contacts
 
