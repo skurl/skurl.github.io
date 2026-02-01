@@ -7,9 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maciej Robert Szczesny</title>
 
+  <!--
+    - favicon
+  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!--
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -17,25 +27,33 @@
 
 <body>
 
+  <!--
+    - #MAIN
+  -->
+
   <main>
 
-    <!-- #SIDEBAR -->
+    <!--
+      - #SIDEBAR
+    -->
+
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <!-- keep image the same -->
-          <img src="./assets/images/my-avatar.png" alt="Maciej Robert Szczesny" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Maciej Robert Szczesny">Maciej Robert Szczesny</h1>
-          <p class="title">Biotechnology (BSc) Student @ The University of Edinburgh</p>
+
+          <p class="title">Web developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
+
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -48,74 +66,81 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:mszczesny101@gmail.com" class="contact-link">mszczesny101@gmail.com</a>
+
+              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
             </div>
+
           </li>
 
-          <!-- Phone not provided in the CV PDF; leaving a placeholder rather than inventing -->
           <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-              <a href="#" class="contact-link">Available on request</a>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
             </div>
+
           </li>
 
-          <!-- Birthday not in the CV PDF; removing rather than guessing -->
-          <!--
           <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-              <time datetime="YYYY-MM-DD">...</time>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
             </div>
+
           </li>
-          -->
 
           <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
-              <address>Edinburgh, United Kingdom</address>
+
+              <address>Sacramento, California, USA</address>
             </div>
+
           </li>
 
         </ul>
 
         <div class="separator"></div>
 
-        <!-- Social links not provided in CV PDF; keeping icons but leaving as placeholders -->
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link" aria-label="Facebook (add link)">
+            <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link" aria-label="Twitter (add link)">
+            <a href="#" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link" aria-label="Instagram (add link)">
+            <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -126,32 +151,57 @@
 
     </aside>
 
-    <!-- #MAIN CONTENT -->
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
     <div class="main-content">
 
-      <!-- #NAVBAR -->
+      <!--
+        - #NAVBAR
+      -->
+
       <nav class="navbar">
+
         <ul class="navbar-list">
+
           <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>About</button>
           </li>
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+
         </ul>
+
       </nav>
 
-      <!-- #ABOUT -->
-      <article class="about active" data-page="about">
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -159,93 +209,108 @@
 
         <section class="about-text">
           <p>
-            I’m a Biotechnology undergraduate at The University of Edinburgh with hands-on exposure to molecular biology
-            workflows and research environments. I’m interested in translational biotech, R&amp;D, and how lab work
-            connects to industry impact.
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
           </p>
 
           <p>
-            Alongside my degree, I’ve built experience across academic projects, biotech internships, and data-focused
-            work for pharmaceutical companies. I’m comfortable in fast-paced settings, enjoy working in teams, and I’m
-            used to balancing multiple deadlines alongside university study.
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
           </p>
         </section>
 
-        <!-- service -->
+
+        <!--
+          - service
+        -->
+
         <section class="service">
 
-          <h3 class="h3 service-title">What I'm doing</h3>
+          <h3 class="h3 service-title">What i'm doing</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
+
               <div class="service-icon-box">
-                <!-- keep image the same -->
-                <img src="./assets/images/icon-design.svg" alt="lab icon" width="40">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Molecular biology &amp; lab workflows</h4>
+                <h4 class="h4 service-item-title">Web design</h4>
+
                 <p class="service-item-text">
-                  Practical exposure to plasmid linearisation, IVT, clean-up, electrophoresis, and protein expression/purification
-                  workflows used in R&amp;D settings.
+                  The most modern and high-quality design made at a professional level.
                 </p>
               </div>
+
             </li>
 
             <li class="service-item">
+
               <div class="service-icon-box">
-                <!-- keep image the same -->
-                <img src="./assets/images/icon-dev.svg" alt="data icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data &amp; scientific tooling</h4>
+                <h4 class="h4 service-item-title">Web development</h4>
+
                 <p class="service-item-text">
-                  Python and Microsoft Office for analysis, reporting, and structured documentation; experience handling sensitive
-                  datasets in a professional environment.
+                  High-quality development of sites at the professional level.
                 </p>
               </div>
+
             </li>
 
             <li class="service-item">
+
               <div class="service-icon-box">
-                <!-- keep image the same -->
-                <img src="./assets/images/icon-app.svg" alt="communication icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Scientific communication</h4>
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
                 <p class="service-item-text">
-                  Proposal writing, clear reporting, and presenting ideas—e.g., pitching healthcare investment proposals and drafting
-                  funding applications for research projects.
+                  Professional development of applications for iOS and Android.
                 </p>
               </div>
+
             </li>
 
             <li class="service-item">
+
               <div class="service-icon-box">
-                <!-- keep image the same -->
-                <img src="./assets/images/icon-photo.svg" alt="teamwork icon" width="40">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Leadership &amp; teamwork</h4>
+                <h4 class="h4 service-item-title">Photography</h4>
+
                 <p class="service-item-text">
-                  Team leader training in hospitality, managing groups under time pressure while maintaining customer experience and
-                  service quality.
+                  I make high-quality photos of any category at a professional level.
                 </p>
               </div>
+
             </li>
 
           </ul>
 
         </section>
 
-        <!-- testimonials repurposed as highlights (keeping images) -->
+
+        <!--
+          - testimonials
+        -->
+
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Highlights</h3>
+          <h3 class="h3 testimonials-title">Testimonials</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
@@ -253,16 +318,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <!-- keep image the same -->
-                  <img src="./assets/images/avatar-1.png" alt="Research project highlight" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Research project</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Planned a project on degradation of common plastics by <em>Aspergillus niger</em>, drafted a proposal, and helped
-                    secure funding through the Edinburgh Scientific Research Association.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -273,16 +340,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <!-- keep image the same -->
-                  <img src="./assets/images/avatar-2.png" alt="Internship highlight" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Biotech internship exposure</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Internships spanning genomics and pathology labs in Warsaw, plus research exposure at the Centre of New Technologies,
-                    supporting molecular workflows and laboratory protocols.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -293,16 +362,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <!-- keep image the same -->
-                  <img src="./assets/images/avatar-3.png" alt="Data work highlight" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Data-focused work</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Ongoing remote role managing data for pharmaceutical companies (including Regeneron and Roche),
-                    with emphasis on accuracy, confidentiality, and process discipline.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -313,16 +384,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <!-- keep image the same -->
-                  <img src="./assets/images/avatar-4.png" alt="Teamwork highlight" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>High-pressure teamwork</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Hospitality roles across Edinburgh and London, including bar training and team leader training—delivering services
-                    efficiently under time pressure.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -333,46 +406,95 @@
 
         </section>
 
-        <!-- clients kept (images unchanged) -->
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
         <section class="clients">
 
-          <h3 class="h3 clients-title">Tools &amp; environments I've worked in</h3>
+          <h3 class="h3 clients-title">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
 
             <li class="clients-item">
-              <a href="#" aria-label="Tool placeholder 1">
-                <img src="./assets/images/logo-1-color.png" alt="tool logo placeholder">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
-              <a href="#" aria-label="Tool placeholder 2">
-                <img src="./assets/images/logo-2-color.png" alt="tool logo placeholder">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
-              <a href="#" aria-label="Tool placeholder 3">
-                <img src="./assets/images/logo-3-color.png" alt="tool logo placeholder">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
-              <a href="#" aria-label="Tool placeholder 4">
-                <img src="./assets/images/logo-4-color.png" alt="tool logo placeholder">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
-              <a href="#" aria-label="Tool placeholder 5">
-                <img src="./assets/images/logo-5-color.png" alt="tool logo placeholder">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
-              <a href="#" aria-label="Tool placeholder 6">
-                <img src="./assets/images/logo-6-color.png" alt="tool logo placeholder">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
               </a>
             </li>
 
@@ -382,195 +504,207 @@
 
       </article>
 
-      <!-- #RESUME -->
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
       <article class="resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <!-- Education -->
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
+
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">The University of Edinburgh — Edinburgh</h4>
-              <span>2023 — Present</span>
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
               <p class="timeline-text">
-                Undergraduate Biological Sciences (Biotechnology). Current average ~75%.
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
               </p>
+
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">St. Edward’s — Poole</h4>
-              <span>2020 — 2022</span>
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
               <p class="timeline-text">
-                A-Levels: Biology, Chemistry, and Maths.
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
               </p>
+
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Copernicus High School — Warsaw</h4>
-              <span>2019 — 2020</span>
-              <p class="timeline-text">
-                Secondary education in Poland.
-              </p>
-            </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Taipei Jingwen Bilingual School (臺北市景文高級中學) — Taipei</h4>
-              <span>2018 — 2019</span>
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
               <p class="timeline-text">
-                International schooling experience in Taiwan.
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
               </p>
+
             </li>
 
           </ol>
 
         </section>
 
-        <!-- Experience -->
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
+              <ion-icon name="book-outline"></ion-icon>
             </div>
+
             <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern — Centre of New Technologies (CeNT), Warsaw</h4>
-              <span>Jun 2024 — Aug 2024</span>
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
               <p class="timeline-text">
-                Supported lab work focused on RNA/protein-related workflows, including exposure to 5' cap synthesis concepts,
-                analytical methods (HPLC, TLC, mass spectrometry), and broader R&amp;D practices (research funding, publishing, and networking).
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
               </p>
+
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Data Manager (Pharmaceutical Companies) — Remote</h4>
-              <span>Jan 2020 — Present</span>
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
               <p class="timeline-text">
-                Managing data for pharmaceutical companies including Regeneron and Roche. Developed strong attention to detail,
-                comfort with specialised tools, and confidence handling sensitive data.
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
               </p>
+
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern — Warsaw Genomics, Warsaw</h4>
-              <span>Jul 2022 — Sep 2022</span>
-              <p class="timeline-text">
-                Observed end-to-end PCR workflows including primer design exposure, pipetting practice, and operating specialised
-                lab equipment while following laboratory protocol.
-              </p>
-            </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern — Department of Pathology &amp; Laboratory Diagnostics, Warsaw</h4>
-              <span>Aug 2021</span>
-              <p class="timeline-text">
-                Learned pathology lab basics including microscopy, sectioning paraffin-embedded tissues, and protocol-driven work.
-              </p>
-            </li>
+              <h4 class="h4 timeline-item-title">Web designer</h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Hospitality Team Member / Team Leader Training — Splendid Hospitality, Edinburgh</h4>
-              <span>May 2024 — Present</span>
-              <p class="timeline-text">
-                Delivering dinner services and drinks receptions under high time pressure. Completed bar training (mobile and stationary bars)
-                and team leader training, managing groups effectively in a fast-paced environment.
-              </p>
-            </li>
+              <span>2010 — 2013</span>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Team Member — Joe &amp; The Juice, London</h4>
-              <span>Oct 2022 — Apr 2023</span>
               <p class="timeline-text">
-                Customer-facing work that strengthened communication, teamwork, and multitasking skills. Worked full-time during a gap year.
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
               </p>
+
             </li>
 
           </ol>
 
         </section>
 
-        <!-- Projects & Extracurricular -->
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="rocket-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Projects &amp; extracurricular</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Student Researcher — Edinburgh Scientific Research Association</h4>
-              <span>Oct 2024 — May 2025</span>
-              <p class="timeline-text">
-                Planned a project investigating plastic degradation by <em>Aspergillus niger</em>, drafted a funding proposal, and outlined
-                assessment methods for biodegradation.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Junior Analyst — Edinburgh University Trading &amp; Investment Club (Healthcare sector)</h4>
-              <span>Jan 2025 — Mar 2025</span>
-              <p class="timeline-text">
-                Created and presented healthcare investment proposals to the EUTIC board, communicating strategic rationale and company value.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Volunteer — Hospicjum Stacjonarne im. św. Patryka, Poland</h4>
-              <span>Sep 2019 — Feb 2020</span>
-              <p class="timeline-text">
-                Volunteering experience supporting patients and staff in a hospice setting.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- Skills (replacing % bars with CV-accurate lists) -->
         <section class="skill">
 
-          <h3 class="h3 skills-title">Skills</h3>
+          <h3 class="h3 skills-title">My skills</h3>
 
-          <div class="content-card" style="padding: 18px;">
-            <p class="timeline-text" style="margin-bottom: 10px;">
-              <strong>Programming:</strong> Python, Markdown, LaTeX
-            </p>
-            <p class="timeline-text" style="margin-bottom: 10px;">
-              <strong>Software:</strong> Microsoft Office Suite, Fusion360
-            </p>
-            <p class="timeline-text" style="margin-bottom: 10px;">
-              <strong>Languages:</strong> Polish (Native), English (Fluent), Chinese (Upper-Intermediate), Russian (Emerging)
-            </p>
-            <p class="timeline-text" style="margin-bottom: 0;">
-              <strong>Status:</strong> UK Settled Status — Indefinite Leave to Remain (ILR)
-            </p>
-          </div>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
 
         </section>
 
       </article>
 
-      <!-- #PORTFOLIO (keep images; update titles/categories to match CV themes) -->
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
       <article class="portfolio" data-page="portfolio">
 
         <header>
@@ -580,163 +714,220 @@
         <section class="projects">
 
           <ul class="filter-list">
+
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
+
             <li class="filter-item">
-              <button data-filter-btn>Research</button>
+              <button data-filter-btn>Web design</button>
             </li>
+
             <li class="filter-item">
-              <button data-filter-btn>Biotech</button>
+              <button data-filter-btn>Applications</button>
             </li>
+
             <li class="filter-item">
-              <button data-filter-btn>Leadership</button>
+              <button data-filter-btn>Web development</button>
             </li>
+
           </ul>
 
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
+
               <div class="select-value" data-selecct-value>Select category</div>
+
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
+
             </button>
 
             <ul class="select-list">
+
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
+
               <li class="select-item">
-                <button data-select-item>Research</button>
+                <button data-select-item>Web design</button>
               </li>
+
               <li class="select-item">
-                <button data-select-item>Biotech</button>
+                <button data-select-item>Applications</button>
               </li>
+
               <li class="select-item">
-                <button data-select-item>Leadership</button>
+                <button data-select-item>Web development</button>
               </li>
+
             </ul>
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item active" data-filter-item data-category="research">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <!-- keep image the same -->
-                  <img src="./assets/images/project-1.jpg" alt="plastic biodegradation" loading="lazy">
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
-                <h3 class="project-title">Plastic biodegradation project</h3>
-                <p class="project-category">Research</p>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="biotech">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-2.png" alt="rna protein workflows" loading="lazy">
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
                 </figure>
-                <h3 class="project-title">CeNT internship work</h3>
-                <p class="project-category">Biotech</p>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="biotech">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-3.jpg" alt="pcr exposure" loading="lazy">
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
-                <h3 class="project-title">Genomics lab exposure (PCR)</h3>
-                <p class="project-category">Biotech</p>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="biotech">
+            <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-4.png" alt="pathology lab" loading="lazy">
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
-                <h3 class="project-title">Pathology lab experience</h3>
-                <p class="project-category">Biotech</p>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="leadership">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-5.png" alt="team leadership" loading="lazy">
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
                 </figure>
-                <h3 class="project-title">Team leader training</h3>
-                <p class="project-category">Leadership</p>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="research">
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-6.png" alt="investment proposals" loading="lazy">
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
-                <h3 class="project-title">Healthcare investment proposals</h3>
-                <p class="project-category">Research</p>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="biotech">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-7.png" alt="data management" loading="lazy">
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
                 </figure>
-                <h3 class="project-title">Pharma data management</h3>
-                <p class="project-category">Biotech</p>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="leadership">
+            <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-8.jpg" alt="hospitality work" loading="lazy">
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
-                <h3 class="project-title">Hospitality under pressure</h3>
-                <p class="project-category">Leadership</p>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="research">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-9.png" alt="volunteering" loading="lazy">
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
                 </figure>
-                <h3 class="project-title">Volunteering (Hospice)</h3>
-                <p class="project-category">Research</p>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
               </a>
             </li>
 
@@ -746,11 +937,18 @@
 
       </article>
 
-      <!-- #BLOG (repurpose to updates/notes; keep images) -->
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
       <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Notes</h2>
+          <h2 class="h2 article-title">Blog</h2>
         </header>
 
         <section class="blog-posts">
@@ -759,64 +957,169 @@
 
             <li class="blog-post-item">
               <a href="#">
+
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Research planning" loading="lazy">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
+
                   <div class="blog-meta">
-                    <p class="blog-category">Research</p>
+                    <p class="blog-category">Design</p>
+
                     <span class="dot"></span>
-                    <time datetime="2025-05-01">May 2025</time>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Plastic biodegradation project wrap-up</h3>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
                   <p class="blog-text">
-                    Key learnings from proposal drafting, experimental planning, and outlining biodegradation assessment methods.
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p>
+
                 </div>
+
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
+
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Internship reflection" loading="lazy">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
+
                   <div class="blog-meta">
-                    <p class="blog-category">Biotech</p>
+                    <p class="blog-category">Design</p>
+
                     <span class="dot"></span>
-                    <time datetime="2024-08-01">Aug 2024</time>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">CeNT internship reflection</h3>
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
                   <p class="blog-text">
-                    What I learned about R&amp;D environments, scientific publishing, and industry-facing research workflows.
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
                   </p>
+
                 </div>
+
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
+
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Data discipline" loading="lazy">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
+
                   <div class="blog-meta">
-                    <p class="blog-category">Professional</p>
+                    <p class="blog-category">Design</p>
+
                     <span class="dot"></span>
-                    <time datetime="2026-02-01">Feb 2026</time>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Working with sensitive datasets</h3>
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
                   <p class="blog-text">
-                    Notes on accuracy, confidentiality, and process discipline from pharma data management work.
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
                   </p>
+
                 </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
               </a>
             </li>
 
@@ -826,7 +1129,14 @@
 
       </article>
 
-      <!-- #CONTACT -->
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
       <article class="contact" data-page="contact">
 
         <header>
@@ -835,9 +1145,8 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <!-- Updated to Edinburgh (not an asset image) -->
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4475.820015914497!2d-3.193812!3d55.948594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c784d6e3a0c7%3A0x3a79f3b0f66b4c2a!2sEdinburgh!5e0!3m2!1sen!2suk!4v0000000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
@@ -850,6 +1159,7 @@
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
@@ -870,8 +1180,19 @@
 
   </main>
 
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
 
+  <!--
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
