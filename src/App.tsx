@@ -45,8 +45,8 @@ function Header() {
           <button
   onClick={() => {
     const a = document.createElement("a");
-    a.href = `${import.meta.env.BASE_URL}CV.pdf`;
-    a.download = "CV.pdf";
+    a.href = `${import.meta.env.BASE_URL}CV_final.pdf`;
+    a.download = "CV_final.pdf";
     document.body.appendChild(a);
     a.click();
     a.remove();
