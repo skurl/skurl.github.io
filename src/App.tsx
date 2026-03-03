@@ -42,9 +42,16 @@ function Header() {
             <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#education">Education</a>
             <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#skills">Skills</a>
           </nav>
-          <button className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-900 dark:text-white text-xs font-bold py-2 px-4 border border-slate-200 dark:border-slate-700 transition-all flex items-center gap-2 uppercase tracking-wide group">
-            <span className="material-symbols-outlined text-sm group-hover:text-primary transition-colors">download</span>
-          </button>
+          <a
+  href={`${import.meta.env.BASE_URL}CV_final.pdf`}
+  download
+  className="bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-900 dark:text-white text-xs font-bold py-2 px-4 border border-slate-200 dark:border-slate-700 transition-all flex items-center gap-2 uppercase tracking-wide group"
+  aria-label="Download CV"
+>
+  <span className="material-symbols-outlined text-sm group-hover:text-primary transition-colors">
+    download
+  </span>
+</a>
         </div>
       </div>
     </header>
