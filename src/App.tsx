@@ -113,8 +113,6 @@ function Hero() {
               <div className="w-full h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCJYqTKQJMCnZSUiZ7EBx1A-cdQTtAngNcmqthfCmfn5Itf5g58965ZOJHnh_ZTN7BfJ1erJbmIG8nqKgUAO9RxMIVdbjl1sRQw_ORQwN_Bt5STJxeTfJT4Jqn9PTFyoFWP6BAwcmWw-jrzhA-KNC0P1AWo1dRM1Q2iOqcLol5SX4me_3cxdlV-62skPv7AobrR9Ec1LfQZm94KZq__0lPQlWODAgo3mCpdlVsDQdKtJP3ZS__sVRQfZWsuXHlWVOw2hVJ--Iw6k0")' }}></div>
             </div>
             <div className="flex justify-between mt-2 font-mono text-xs text-slate-400">
-              <span>IMG_ID: 2024_PROF</span>
-              <span>[PORTRAIT]</span>
             </div>
           </div>
         </div>
