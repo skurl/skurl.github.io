@@ -18,18 +18,3 @@ View your app in AI Studio: https://ai.studio/apps/a6ecd7bd-b57a-41e2-a8d4-1447a
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
-
----
-
-## Deploy to GitHub Pages (skurl.github.io)
-
-1. Push this repo to GitHub (main branch).
-2. In GitHub: **Settings → Pages → Source: GitHub Actions**.
-3. Push any commit; the workflow `.github/workflows/deploy.yml` will build and deploy.
-
-Local run:
-
-```bash
-npm install
-npm run dev
-```
