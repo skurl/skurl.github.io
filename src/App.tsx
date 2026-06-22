@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function App() {
   return (
@@ -12,6 +12,7 @@ export default function App() {
             <div className="lg:col-span-8 space-y-16">
               <Experience />
               <Projects />
+              <Recent />
               <Hospitality />
             </div>
             <div className="lg:col-span-4 space-y-12">
@@ -39,6 +40,7 @@ function Header() {
           <nav className="hidden md:flex gap-8 text-xs font-medium uppercase tracking-wider">
             <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#experience">Experience</a>
             <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#projects">Projects</a>
+            <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#github">GitHub</a>
             <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#education">Education</a>
             <a className="hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary" href="#skills">Skills</a>
           </nav>
@@ -297,6 +299,63 @@ function Projects() {
           <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-tight">Volunteer</h3>
           <p className="text-xs text-slate-500 font-mono mb-4 uppercase">Hospicjum Stacjonarne im. św. Patryka, Poland (SEP 2019 - FEB 2020)</p>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function Recent() {
+  // ponytail: unauthenticated GitHub API, 60 req/hr per IP. Fine for a portfolio.
+  // If it ever rate-limits, cache the JSON at build time or add a token-backed proxy.
+  const [repos, setRepos] = useState<any[]>([]);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/skurl/repos?sort=pushed&per_page=12')
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => setRepos(data.filter((r: any) => !r.fork).slice(0, 4)))
+      .catch(() => setFailed(true));
+  }, []);
+
+  if (failed || repos.length === 0) return null;
+
+  return (
+    <section className="scroll-mt-24" id="github">
+      <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4 mb-8">
+        <h2 className="text-2xl font-bold uppercase tracking-tight flex items-center gap-3">
+          <span className="w-3 h-3 bg-primary"></span>
+          Recent on GitHub
+        </h2>
+        <a className="text-xs font-mono uppercase tracking-wider text-slate-500 hover:text-primary transition-colors" href="https://github.com/skurl" target="_blank" rel="noreferrer">@skurl</a>
+      </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        {repos.map((repo) => (
+          <a
+            key={repo.id}
+            href={repo.html_url}
+            target="_blank"
+            rel="noreferrer"
+            className="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-subtle hover:border-primary/50 transition-all flex flex-col h-full group"
+          >
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white leading-tight group-hover:text-primary transition-colors">{repo.name}</h3>
+              <span className="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">code</span>
+            </div>
+            <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">
+              {repo.description || 'No description.'}
+            </p>
+            <div className="flex items-center gap-4 text-xs font-mono text-slate-500 uppercase">
+              {repo.language && <span>{repo.language}</span>}
+              {repo.stargazers_count > 0 && (
+                <span className="flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">star</span>
+                  {repo.stargazers_count}
+                </span>
+              )}
+              <span className="ml-auto">{new Date(repo.pushed_at).toLocaleDateString()}</span>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   );
