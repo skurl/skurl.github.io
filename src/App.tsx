@@ -10,9 +10,9 @@ export default function App() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-8 space-y-16">
+              <Recent />
               <Experience />
               <Projects />
-              <Recent />
               <Hospitality />
             </div>
             <div className="lg:col-span-4 space-y-12">
@@ -128,7 +128,7 @@ function Hero() {
               <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-slate-900 dark:border-white"></div>
               <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-slate-900 dark:border-white"></div>
               <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-slate-900 dark:border-white"></div>
-              <div className="w-full h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" style={{ backgroundImage: `url("${import.meta.env.BASE_URL}HEADSHOT.PNG")` }}></div>
+              <div className="w-full h-full bg-cover" style={{ backgroundImage: `url("${import.meta.env.BASE_URL}HEADSHOT.PNG")`, backgroundPosition: '58% center' }}></div>
             </div>
             <div className="flex justify-between mt-2 font-mono text-xs text-slate-400">
             </div>
