@@ -16,51 +16,55 @@ const experience = [
     when: 'Mar 2026 – now',
     title: 'Student Researcher, Condensense (iGEM)',
     where: 'Edinburgh',
-    text: 'Working on biomolecular condensate-based biosensors for the iGEM competition as part of the Funding and Dry Lab teams.',
+    text: 'Biomolecular condensate-based biosensors for the iGEM competition, on the Funding and Dry Lab teams. Molecular dynamics in AMBER and OpenMM to test construct variants in silico.',
   },
   {
     when: 'May – Aug 2026',
     title: 'Student Researcher, University of Edinburgh',
     where: 'Edinburgh',
     href: 'https://github.com/skurl/flashEE',
-    text: 'Built flashEE from scratch in PyTorch: a 4.94M-parameter protein language model trained on eukaryotic UniProt sequences, covering the data pipeline, architecture, training and evaluation, used to study the impacts of quantisation.',
+    text: 'Built flashEE from scratch in PyTorch: a 4.94M-parameter protein language model trained on eukaryotic UniProt sequences, designed to study the impacts of quantisation. Funded by CCPBioSim and EPSRC.',
   },
   {
     when: 'Jun – Aug 2024',
     title: 'Intern, Centre of New Technologies',
     where: 'Warsaw',
-    text: "Learned basics of 5' cap synthesis (solid state, HPLC, TLC, MS). Modified mRNA (linearisation, IVT, cleanup) and performed protein purification (E. coli expression, FPLC, MST, dialysis). Gained insight into R&D, financing and scientific networking.",
+    text: "Performed 5' cap synthesis by solid-state methods, verified by HPLC, TLC and mass spectrometry. Modified mRNA (plasmid linearisation, IVT, cleanup, electrophoresis) and purified proteins (E. coli expression, FPLC, MST, dialysis).",
   },
   {
     when: 'Jan 2020 – now',
     title: 'Data Manager, pharmaceutical companies',
     where: 'Remote',
-    text: 'Data management for Regeneron, Roche and others. Thoroughness, specialised tooling and handling sensitive data.',
+    text: 'Clinical data entry for Regeneron, Roche and others, as a part-time job; Good Clinical Practice (GCP) certification completed.',
   },
   {
     when: 'Jul – Sep 2022',
     title: 'Intern, Warsaw Genomics',
     where: 'Warsaw',
-    text: 'Every step of PCR: primer design, pipetting and specialised lab equipment. Learned to follow laboratory protocol.',
+    text: 'Designed primers and ran COVID-19 PCR assays following standard laboratory protocol.',
   },
   {
     when: 'Aug 2021',
     title: 'Intern, Department of Pathology and Laboratory Diagnostics',
     where: 'Warsaw',
-    text: 'Worked in a pathology lab: scientific microscopes, sectioning paraffin-embedded tissues, lab protocol.',
+    text: 'Shadowing professors and learning about the diagnosis and treatment of diseases through microscopy and sectioning of paraffin-embedded tissues.',
   },
 ];
 
 const projects = [
   {
     when: 'Oct 2024 – May 2025',
-    title: 'Student Researcher, ESRA',
-    text: 'Planned a research project on the degradation of common plastics by Aspergillus niger. Drafted a scientific proposal to secure funding and outlined methods for assessing biodegradation.',
+    title: 'Student Researcher, Edinburgh Scientific Research Association',
+    text: [
+      'Designed a project on plastic degradation by ',
+      <i key="species">Aspergillus niger</i>,
+      ' and outlined the assessment methods. Wrote the proposal and secured the funding.'
+    ],
   },
   {
     when: 'Jan – Mar 2025',
-    title: 'Junior Analyst, EUTIC',
-    text: 'Created and presented healthcare-sector investment proposals to the EUTIC board. Secured investment by communicating company value propositions.',
+    title: 'Junior Analyst, Edinburgh University Trading and Investment Club',
+    text: 'Researched and pitched healthcare-sector investment proposals to the club board.',
   },
   {
     when: 'Sep 2019 – Feb 2020',
@@ -69,20 +73,15 @@ const projects = [
   },
 ];
 
-const otherWork = [
-  { when: 'May 2024 – now', title: 'Splendid Hospitality, Edinburgh', text: 'Team leader and bar training. Dinner services and drinks receptions under time pressure.' },
-  { when: 'Oct 2022 – Apr 2023', title: 'Joe & The Juice, London', text: 'Full-time during gap year.' },
-];
-
 const education = [
-  { when: '2023 – now', title: 'University of Edinburgh', text: 'BSc (Hons) Biotechnology, 4th year. Current average ~75%.' },
+  { when: '2023 – now', title: 'University of Edinburgh', text: 'BSc (Hons) Biotechnology, 4th year. Current average ~74%.' },
   { when: '2020 – 2022', title: "St. Edward's, Poole", text: 'A-Levels: Biology, Chemistry, Maths.' },
   { when: '2019 – 2020', title: 'Copernicus High School, Warsaw', text: '' },
   { when: '2018 – 2019', title: 'Taipei Jingwen Bilingual School, Taipei', text: '' },
-  { when: '2016 – 2018', title: 'Staszic Middle School, Warsaw', text: 'Mathematics middle school, individualised mathematics classes.' },
+  { when: '2016 – 2018', title: 'Staszic Middle School, Warsaw', text: 'Mathematics-focused middle school with tailored advanced mathematics curriculum.' },
 ];
 
-const skills = 'Python, LaTeX, Markdown, Fusion 360, MS Office.';
+const skills = 'Python (PyTorch, NumPy, pandas), Bash, LaTeX. Molecular dynamics in AMBER and OpenMM. Linux, Git, Microsoft Office, Fusion 360.';
 const languages = 'Polish (native), English (fluent), Chinese (upper-intermediate), Russian (emerging).';
 const status = 'Polish citizen with UK Settled Status (Indefinite Leave to Remain).';
 
@@ -94,7 +93,6 @@ export default function App() {
       <Section title="Projects" id="projects" items={projects} />
       <Recent />
       <Section title="Education" id="education" items={education} />
-      <Section title="Other work" items={otherWork} />
       <section>
         <H2>Skills</H2>
         <p>{skills}</p>
@@ -178,6 +176,7 @@ function Recent() {
       items={repos.map((r) => ({
         when: new Date(r.pushed_at).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }),
         title: r.name,
+        href: r.html_url,
         where: r.language,
         text: r.description || '',
       }))}
